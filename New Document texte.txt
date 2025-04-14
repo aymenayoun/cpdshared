@@ -1,0 +1,18 @@
+from tkinter import *
+from tkinter.ttk import *
+window=Tk() #create window
+window.title('hello world')
+window.geometry('480x350') #size of window
+lbl=Label(window,text='hello',font=('Arial Bold',50))
+lbl.grid(column=1,row=4)
+txt=Entry(window,width=10) #saisir text
+txt.grid(column=0,row=4) #pos entry
+def clicked():  #button function
+   lbl.configure(text=combo.get())
+btn=Button(window,text='confirm',command=clicked)  #buton compart.
+btn.grid(column=2,row=0)  #button place
+combo=Combobox(window) #scroll box
+combo['values']=(1,2,3,4,5,'text')
+combo.current(2) #combo initial
+combo.grid(column=0,row=0) #combo pos
+window.mainloop() #app stays open
