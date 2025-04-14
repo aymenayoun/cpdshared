@@ -24,6 +24,11 @@ def CreateBee():
     Velocity = random.randint(5,20)
     return XStart,YStart,XEnd,YEnd,Velocity
 
+
+def hi (){
+    print("hi")
+}
+
 def Training(Sample):
     TotalScore = 0
     HighestScore = 0
