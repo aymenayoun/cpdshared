@@ -290,6 +290,18 @@ def ShowHome():
 
 def testtesttets():
     result = tkMessageBox.askquestion('Simple Inventory System', 'Are you sure you want to logout?', icon="warning")
+    global viewform
+    viewform = Toplevel()
+    viewform.title("Simple Inventory System/View Product")
+    width = 600
+    height = 400
+    screen_width = Home.winfo_screenwidth()
+    screen_height = Home.winfo_screenheight()
+    x = (screen_width/2) - (width/2)
+    y = (screen_height/2) - (height/2)
+    viewform.geometry("%dx%d+%d+%d" % (width, height, x, y))
+    viewform.resizable(0, 0)
+    ViewForm()
 #========================================MENUBAR WIDGETS==================================
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
