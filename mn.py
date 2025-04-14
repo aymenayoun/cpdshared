@@ -4,7 +4,7 @@ import sqlite3
 import tkinter.ttk as ttk
 #Thanks To Mark Arvin
 root = Tk()
-root.title("Simple Inventory System")
+root.title("Simple Inventory System for testttttttttttttt")
 
 width = 1024
 height = 520
@@ -260,6 +260,9 @@ def Logout():
         admin_id = ""
         root.deiconify()
         Home.destroy()
+def testfonc():
+    Database()
+    result = tkMessageBox.askquestion('Simple Inventory System', 'Are you sure you want to logout?', icon="warning")
   
 def Login(event=None):
     global admin_id
