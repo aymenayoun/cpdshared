@@ -288,7 +288,8 @@ def ShowHome():
     Home()
     loginform.destroy()
 
-
+def testtesttets():
+    result = tkMessageBox.askquestion('Simple Inventory System', 'Are you sure you want to logout?', icon="warning")
 #========================================MENUBAR WIDGETS==================================
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
